@@ -4,30 +4,33 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./Home";
-import Stuff from "./Stuff";
-import Contact from "./Contact";
+import Basic from "./web/basic/Basic_Main";
+import cardStyle from "./web/cardStyle/CardStyle_Main";
+import To_Do from "./web/To-Do/To_Do";
 
 class Main extends Component {
     render() {
       return (
         <HashRouter>
-          <div>
-            <h1>Jema <i>-The Tech Guy</i></h1>
-            <ul className="header">
-              <li><NavLink exact to="/">Home</NavLink></li>
-              <li><NavLink to="/stuff">Stuff</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
-            <div className="content">
-              <Route exact path="/" component={Home}/>
-              <Route path="/stuff" component={Stuff}/>
-              <Route path="/contact" component={Contact}/>
+          <div className="main">
+            <div className="main_menu">
+              <h4 className="title"><span>JEMA</span><br/>-The Tech Guy</h4>
+              <ul className="website_list">
+                <li><NavLink to="/basic">Basic</NavLink></li>
+                <li><NavLink to="/cardStyle">Card Styles</NavLink></li>
+                <li><NavLink to="/to_Do">To Do</NavLink></li>
+              </ul>
+            </div>
+            <div className="page_frame">
+              <Route path="/basic" component={Basic}/>
+              <Route path="/cardStyle" component={cardStyle}/>
+              <Route path="/to_Do" component={To_Do}/>
             </div>
           </div>
         </HashRouter>
       );
     }
   }
+
 
   export default Main;

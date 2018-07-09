@@ -1,39 +1,79 @@
-body {
-  background-color: rgb(0, 174, 255);
-  padding: 20px;
+/*Main Menu :   */
+/*code for main menu */
+
+html, body, #root {
+  height: 100%;
   margin: 0;
 }
-h1, h2, p, ul, li {
-  font-family: sans-serif;
+.main_menu{
+  background-color: rgb(63, 165, 212);
+  position: fixed;
+  float: left;
+  width: 15%;
+  height: 100%;
+  word-wrap: break-word;
 }
-ul.header li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
+.page_frame{
+  background-color: rgb(228, 228, 228);
+  margin-left: 15%;
+  width: 85%;
+  min-height: 100%;
 }
-ul.header {
-  background-color: #111;
+.website_list {
+  width: 100%;
   padding: 0;
-}
-ul.header li a {
-  color: #FFF;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 20px;
-  display: inline-block;
-}
-.content {
-  background-color: #FFF;
-  padding: 20px;
-}
-.content h2 {
-  padding: 0;
-  margin: 0;
-}
-.content li {
-  margin-bottom: 10px;
 }
 
-.active {
-    background-color: #0099FF;
-  }
+.main {
+    display: flex;
+    height: 100%;
+}
+
+.links {
+  color: red;
+}
+
+.website_list li a{
+  color: white !important;
+  text-decoration: none !important;
+  padding: 10%;
+  width: 80%;
+  display: block;
+}
+.website_list li a:hover{
+  color: black !important;
+}
+.website_list li:hover{
+  background-color: rgb(250, 250, 250);
+  text-color: black;
+}
+
+.title {
+  padding: 15% 10%;
+  font-family: Roboto;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  TEXT-ALIGN: CENTER;
+  background-color: gray;
+  margin-top: 0;
+}
+.title span {
+  font-size: 25px;
+}
+/* End for main menu */
+
+
+/* Second website : chatApp */
+/*for second website */
+.main_calc {
+  margin-left: 30% !important;
+  background-color: black;
+  width: 350px;
+  max-height: 400px;
+}
+.calc_screen {
+  background-color: white;
+  max-height: 20%;
+}
+
+/* End for second website */
